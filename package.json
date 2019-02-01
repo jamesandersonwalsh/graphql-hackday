@@ -1,0 +1,24 @@
+{
+  "name": "graphql-hackday",
+  "version": "1.0.0",
+  "description": "A GraphQL experiment for Dev ★ Q1 2019 Hackday",
+  "main": "src/index.js",
+  "repository": "git@github.com:jimboslicethat/graphql-hackday.git",
+  "author": "James Walsh <jamesandersonwalsh@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "babel src/index.js -d dist",
+    "start": "npm run build && nodemon dist/index.js"
+  },
+  "dependencies": {
+    "apollo-server": "2.3.3",
+    "graphql": "14.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.3.1",
+    "nodemon": "1.18.9"
+  }
+}
